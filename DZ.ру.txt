@@ -1,0 +1,14 @@
+>>> name=input('введите имя: ')
+введите имя:
+>>> name1 = list(name)
+>>> name1 = [name1 *  len(name1) for name1 in (name)]
+>>> 
+>>> name1
+['и', 'в', 'а', 'н']
+>>> name1 = [name1 *  len(name) for name1 in (name)]
+>>> name1
+['ииии', 'вввв', 'аааа', 'нннн']
+>>> for i in range(len(name1)):
+	for j in range(len(name1[i])):
+		print(name1[i][j], end=' ')
+	print()
